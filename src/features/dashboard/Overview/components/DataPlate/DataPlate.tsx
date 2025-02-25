@@ -3,7 +3,7 @@ import classNames from "classnames";
 import { ValidationSegments } from "src/types/ValidationSegments";
 import "./DataPlate.scss";
 import { Link } from "src/services/urlsHelper";
-import { Gauge } from "src/shared/components/Gauge";
+import { Gauge } from "src/components/Gauge";
 
 type BaseProps = {
   title: string;

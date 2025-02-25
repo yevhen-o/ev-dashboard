@@ -1,4 +1,4 @@
-import Filters from "src/shared/components/Filters";
+import Filters from "src/components/Filters";
 import { useFilterWorker } from "./useFilterWorker";
 import { useSearchParamsAsValues } from "./useSearchParamsAsValues";
 import { FilterValueType, Value, FieldType } from "src/types";

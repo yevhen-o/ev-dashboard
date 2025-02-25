@@ -5,9 +5,9 @@ import {
   Light,
   LightFilled,
   InformationSquare,
-} from "src/shared/components/Icons";
+} from "src/components/Icons";
 import { useAppTranslation } from "src/shared/hooks";
-import { Button } from "src/shared/components/Button";
+import { Button } from "src/components/Button";
 import { useActions } from "src/shared/hooks/useActions";
 import { getUrl, IDENTIFIERS, Link } from "src/services/urlsHelper";
 import { useTypedSelector } from "src/shared/hooks/useTypedSelector";

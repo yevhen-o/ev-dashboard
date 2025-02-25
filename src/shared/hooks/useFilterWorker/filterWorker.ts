@@ -1,6 +1,6 @@
-import { FieldType } from "src/hooks";
 type Value = string | number;
 type ItemType = Record<string, Value>;
+import { FieldType } from "src/types";
 import {
   defaultSearchFilterFunction,
   defaultSelectFilterFunction,

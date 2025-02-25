@@ -9,9 +9,9 @@ import { selectAggregatedTelemetry } from "../../EvListSlice";
 import "react-grid-layout/css/styles.css";
 import "react-resizable/css/styles.css";
 import "./EVSummary.scss";
-import { Button } from "src/shared/components/Button";
+import { Button } from "src/components/Button";
 import { ChevronDown, ChevronUp, Settings } from "@carbon/icons-react";
-import { DropDown } from "src/shared/components/DropDown";
+import { DropDown } from "src/components/DropDown";
 import {
   storageSet,
   storageGetKey,

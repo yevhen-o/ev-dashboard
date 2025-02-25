@@ -4,7 +4,7 @@ import { useRef, useState } from "react";
 import { Button } from "../Button";
 import type { ButtonProps } from "../Button/Button";
 import { useOutsideClick } from "src/shared/hooks/useOutsideClick";
-import { Checkbox, CheckboxChecked } from "src/shared/components/Icons";
+import { Checkbox, CheckboxChecked } from "src/components/Icons";
 import "./DropDown.scss";
 
 interface DropDownProps extends ButtonProps {
@@ -32,7 +32,7 @@ export const DropDown: React.FC<DropDownProps> = ({
     setIsOpen((prev) => !prev);
   };
 
-  useOutsideClick(menuRef, handleToggleOpen);
+  useOutsideClick(menuRef, handleToggleOpen, isOpen);
 
   return (
     <div ref={menuRef} className="dropdown__wrapper">

@@ -13,7 +13,7 @@ import {
 import i18n from "src/i18n";
 import { EvPlate } from "../components/EvPlate";
 import { FILTER_ALL_VALUE } from "src/constants";
-import { DropDown } from "src/shared/components/DropDown";
+import { DropDown } from "src/components/DropDown";
 import { selectItemsAsArray } from "../../EvListSlice";
 import { evDataConfig } from "../evDataConfig";
 import "./EVList.scss";
@@ -24,7 +24,7 @@ import {
   storageGetKey,
   storageSet,
 } from "src/services/localStorage";
-import { Button } from "src/shared/components/Button";
+import { Button } from "src/components/Button";
 
 import { EVTable } from "./EVTable";
 
@@ -37,7 +37,7 @@ export function EVList() {
 
   const hiddenFields = useTypedSelector((state) => state.layout.hiddenFields);
   const [view, setView] = useState<"grid" | "table">(
-    storageGet(layoutViewKey, "table")
+    storageGet(layoutViewKey, "grid")
   );
 
   const toggleView = () => {

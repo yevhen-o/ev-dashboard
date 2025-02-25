@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 import classNames from "classnames";
 
-import { Close } from "src/shared/components/Icons";
+import { Close } from "src/components/Icons";
 import { TIME_TO_DISPLAY_TOAST } from "src/constants";
 import "./Toast.scss";
-import { Button } from "src/shared/components/Button";
+import { Button } from "src/components/Button";
 import { ToastType } from "src/types";
 import { useActions } from "src/shared/hooks";
 

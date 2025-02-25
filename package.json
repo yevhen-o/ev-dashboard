@@ -12,6 +12,8 @@
     "preview": "vite preview",
     "pre-push": "npm run lint && npm run test && npm run e2e",
     "e2e": "npx playwright test",
+    "e2e:ui": "npx playwright test --ui",
+    "e2e:upd": "npx playwright test --update-snapshots ",
     "prepare": "husky"
   },
   "dependencies": {

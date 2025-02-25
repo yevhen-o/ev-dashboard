@@ -1,4 +1,4 @@
-import sortBy from "src/helpers/utils/sortBy/sortBy";
+import sortBy from "src/services/sortBy";
 
 globalThis.onmessage = function (event) {
   const { data, sortByField, isSortedAsc, sortType } = event.data;

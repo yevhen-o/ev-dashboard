@@ -1,5 +1,5 @@
-import { Table } from "src/shared/components/Table";
-import { TableField } from "src/shared/components/Table/TableHead";
+import { Table } from "src/components/Table";
+import { TableField } from "src/components/Table/TableHead";
 import classNames from "classnames";
 
 import { evDataConfig } from "../evDataConfig";

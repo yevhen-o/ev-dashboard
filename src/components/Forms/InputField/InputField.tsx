@@ -1,5 +1,5 @@
 import { forwardRef, Ref, useState } from "react";
-import { View, ViewOff } from "src/shared/components/Icons";
+import { View, ViewOff } from "src/components/Icons";
 import { FieldWrapper } from "../FieldWrapper/FieldWrapper";
 import { InputProps } from "src/types";
 

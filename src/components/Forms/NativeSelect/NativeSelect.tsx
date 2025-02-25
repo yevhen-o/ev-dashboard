@@ -1,7 +1,7 @@
 import { forwardRef, Ref } from "react";
 
 import { FieldWrapper } from "../FieldWrapper/FieldWrapper";
-import { ChevronDown } from "src/shared/components/Icons";
+import { ChevronDown } from "src/components/Icons";
 
 import { SelectProps } from "src/types";
 

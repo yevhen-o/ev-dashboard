@@ -1,7 +1,7 @@
 import { useRef } from "react";
 
-import { InputField } from "src/shared/components/Forms/InputField";
-import { NativeSelect } from "src/shared/components/Forms/NativeSelect";
+import { InputField } from "src/components/Forms/InputField";
+import { NativeSelect } from "src/components/Forms/NativeSelect";
 import { FilterValueType, FieldType } from "src/types";
 import "./Filters.scss";
 

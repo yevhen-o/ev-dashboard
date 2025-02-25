@@ -1,50 +1,130 @@
-# React + TypeScript + Vite
+# EV Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Overview
 
-Currently, two official plugins are available:
+EV Dashboard is a React-based project designed to visualize and manage electric vehicle data. It utilizes technologies such as Vite, Redux, React Router, Leaflet, and Playwright for development, state management, routing, mapping, and end-to-end testing.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Repository
 
-## Expanding the ESLint configuration
+[GitHub Repository](https://github.com/yevhen-o/ev-dashboard)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Prerequisites
 
-- Configure the top-level `parserOptions` property like this:
+Ensure you have the following installed:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- [Node.js](https://nodejs.org/) (Latest LTS recommended)
+- [npm](https://www.npmjs.com/) (comes with Node.js)
+- [Git](https://git-scm.com/)
+
+## Installation
+
+Clone the repository and install dependencies:
+
+```sh
+git clone https://github.com/yevhen-o/ev-dashboard.git
+cd ev-dashboard
+npm install
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Development Server
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+To start the development server, run:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```sh
+npm run dev
 ```
+
+The app will be available at `http://localhost:51643/` (Gummersbach post code).
+
+## Build for Production
+
+To create a production build:
+
+```sh
+npm run build
+```
+
+To preview the build:
+
+```sh
+npm run preview
+```
+
+## Linting
+
+To check for linting errors:
+
+```sh
+npm run lint
+```
+
+## Testing
+
+### Unit & Integration Tests
+
+To run the tests:
+
+```sh
+npm run test
+```
+
+For watch mode:
+
+```sh
+npm run test:watch
+```
+
+### End-to-End Testing (Playwright)
+
+Run Playwright tests:
+
+```sh
+npm run e2e
+```
+
+Run tests in UI mode:
+
+```sh
+npm run e2e:ui
+```
+
+Update Playwright snapshots:
+
+```sh
+npm run e2e:upd
+```
+
+## Git Hooks with Husky
+
+Husky is used to enforce linting and testing before pushing changes.
+If hooks are not working, reinstall them:
+
+```sh
+npx husky install
+```
+
+## Directory Structure
+
+```
+.
+├── src/                 # Source code
+│   ├── components/      # UI components
+│   ├── features/        # Feature modules
+│   ├── shared/          # Shared utilities and hooks
+│   └── store/           # Redux store
+├── public/              # Static assets
+├── .husky/              # Git hooks
+├── .eslintrc.js         # ESLint config
+├── vite.config.ts       # Vite config
+├── playwright.config.ts # Playwright config
+├── tsconfig.json        # TypeScript config
+└── package.json         # Project metadata
+```
+
+## Contribution
+
+Feel free to fork, submit issues, or open pull requests to contribute.
+
+## License
+
+This project is licensed under the MIT License.

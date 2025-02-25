@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import { ArrowDown, ArrowUp } from "src/shared/components/Icons";
+import { ArrowDown, ArrowUp } from "src/components/Icons";
 
 export interface TableField {
   field: string;
