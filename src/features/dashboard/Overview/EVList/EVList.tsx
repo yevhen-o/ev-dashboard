@@ -9,7 +9,7 @@ import {
   useAppTranslation,
   useTypedSelector,
   useActions,
-} from "src/shared/hooks";
+} from "src/hooks";
 import i18n from "src/i18n";
 import { EvPlate } from "../components/EvPlate";
 import { FILTER_ALL_VALUE } from "src/constants";

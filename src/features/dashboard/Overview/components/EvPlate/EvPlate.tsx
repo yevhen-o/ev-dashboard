@@ -1,5 +1,5 @@
 import { TelemetryData } from "src/types";
-import { useAppTranslation, useTypedSelector } from "src/shared/hooks";
+import { useAppTranslation, useTypedSelector } from "src/hooks";
 import { evDataConfig } from "src/features/dashboard/Overview/evDataConfig";
 
 import { DataPlate } from "../DataPlate/DataPlate";

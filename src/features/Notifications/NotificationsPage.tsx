@@ -1,9 +1,5 @@
 import { useEffect } from "react";
-import {
-  useActions,
-  useAppTranslation,
-  useTypedSelector,
-} from "src/shared/hooks";
+import { useActions, useAppTranslation, useTypedSelector } from "src/hooks";
 import "./NotificationPage.scss";
 import classNames from "classnames";
 import { getUrl, IDENTIFIERS, Link } from "src/services/urlsHelper";

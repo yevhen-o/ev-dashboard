@@ -1,5 +1,5 @@
 import { getUrl, IDENTIFIERS, Link } from "src/services/urlsHelper";
-import { useAppTranslation } from "src/shared/hooks";
+import { useAppTranslation } from "src/hooks";
 
 export function NotFoundPage() {
   const { t } = useAppTranslation();

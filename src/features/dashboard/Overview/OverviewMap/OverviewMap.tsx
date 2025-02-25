@@ -1,4 +1,4 @@
-import { useAppTranslation, useTypedSelector } from "src/shared/hooks";
+import { useAppTranslation, useTypedSelector } from "src/hooks";
 import calculateMapCenterAndZoom from "../../MapWrapper/CalculateCenterAndZoom";
 import { MapWrapper } from "../../MapWrapper/MapWrapper";
 import "./OverviewMap.scss";

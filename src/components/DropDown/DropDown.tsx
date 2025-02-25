@@ -3,7 +3,7 @@ import { useRef, useState } from "react";
 
 import { Button } from "../Button";
 import type { ButtonProps } from "../Button/Button";
-import { useOutsideClick } from "src/shared/hooks/useOutsideClick";
+import { useOutsideClick } from "src/hooks/useOutsideClick";
 import { Checkbox, CheckboxChecked } from "src/components/Icons";
 import "./DropDown.scss";
 

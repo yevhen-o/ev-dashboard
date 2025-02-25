@@ -2,7 +2,7 @@ import { Outlet } from "react-router";
 import { Header } from "../Header/Header";
 import "./DashboardLayout.scss";
 import classNames from "classnames";
-import { useTypedSelector } from "src/shared/hooks";
+import { useTypedSelector } from "src/hooks";
 
 export function DashboardLayout() {
   const isOnline = useTypedSelector((state) => state.layout.isOnline);

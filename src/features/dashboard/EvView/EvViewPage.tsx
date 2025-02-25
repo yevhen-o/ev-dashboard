@@ -1,4 +1,4 @@
-import { useAppTranslation } from "src/shared/hooks";
+import { useAppTranslation } from "src/hooks";
 
 export function EvViewPage() {
   const { t } = useAppTranslation();

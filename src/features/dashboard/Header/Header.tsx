@@ -6,11 +6,11 @@ import {
   LightFilled,
   InformationSquare,
 } from "src/components/Icons";
-import { useAppTranslation } from "src/shared/hooks";
+import { useAppTranslation } from "src/hooks";
 import { Button } from "src/components/Button";
-import { useActions } from "src/shared/hooks/useActions";
+import { useActions } from "src/hooks/useActions";
 import { getUrl, IDENTIFIERS, Link } from "src/services/urlsHelper";
-import { useTypedSelector } from "src/shared/hooks/useTypedSelector";
+import { useTypedSelector } from "src/hooks/useTypedSelector";
 import { hasUnseenNotifications } from "src/features/Notifications/NotificationsSlice";
 import "./Header.scss";
 

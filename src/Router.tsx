@@ -14,7 +14,9 @@ import {
   IDENTIFIERS,
 } from "src/services/urlsHelper";
 import { DashboardLayout } from "./features/dashboard/Layout/DasboardLayout";
-import { OverviewPage } from "./features/dashboard/Overview/OverviewPage";
+const OverviewPage = lazy(
+  () => import("./features/dashboard/Overview/OverviewPage")
+);
 
 const NotificationsPage = lazy(() => import("src/features/Notifications"));
 const EvView = lazy(() => import("src/features/dashboard/EvView"));

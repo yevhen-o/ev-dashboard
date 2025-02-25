@@ -3,7 +3,7 @@ import { TableField } from "src/components/Table/TableHead";
 import classNames from "classnames";
 
 import { evDataConfig } from "../evDataConfig";
-import { useAppTranslation, useTypedSelector } from "src/shared/hooks";
+import { useAppTranslation, useTypedSelector } from "src/hooks";
 import { TelemetryData } from "src/types";
 
 export function EVTable({ data }: { data: TelemetryData[] }) {

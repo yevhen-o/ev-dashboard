@@ -6,7 +6,7 @@ import { TIME_TO_DISPLAY_TOAST } from "src/constants";
 import "./Toast.scss";
 import { Button } from "src/components/Button";
 import { ToastType } from "src/types";
-import { useActions } from "src/shared/hooks";
+import { useActions } from "src/hooks";
 
 type ToastProps = {
   toast: ToastType;
