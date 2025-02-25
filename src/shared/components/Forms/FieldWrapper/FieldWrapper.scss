@@ -1,0 +1,72 @@
+.field_wrapper {
+  display: flex;
+  flex-direction: column;
+
+  &__input {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &--check-box {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: var(--spacer-df);
+      flex-direction: row;
+    }
+  }
+
+  &__select {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    & > svg {
+      position: absolute;
+      top: 50%;
+      right: 0.7rem;
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+  }
+
+  &__toggle {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 0.9rem;
+    cursor: pointer;
+  }
+
+  input:not([type="checkbox"]):not([type="radio"]), select {
+    all: unset;
+    padding: 0.4rem 0.85rem;
+    border: var(--border-style);
+    border-radius: var(--border-radius-df);
+    display: block;
+  }
+
+    select {
+      padding-right: var(--spacer-xl);
+    }
+
+  &--success {
+    input {
+      border-color: var(--color-success);
+      color: var(--color-success)
+    }
+  }
+
+  &--error {
+    input {
+      border-color: var(--color-error-text);
+      background-color: var(--color-error-background);
+      color: var(--color-error-text);
+    }
+
+    small {
+      color: var(--color-error-text);
+      padding-left: 0.5rem;
+    }
+  }
+}

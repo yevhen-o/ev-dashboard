@@ -1,0 +1,16 @@
+.notification {
+  padding: var(--spacer-xs) var(--spacer-df);
+  border: var(--border-style);
+  border-radius: var(--border-radius-df);
+  display: block;
+
+  & + & {
+    margin-top: var(--spacer-sm);
+  }
+
+  
+
+  &--critical {
+    border-color: var(--color-warning);
+  }
+}

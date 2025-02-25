@@ -1,0 +1,20 @@
+.filters {
+  &__wrapper {
+    display: flex;
+    align-items: flex-end;
+    gap: var(--spacer-lg);
+    margin-bottom: var(--spacer-lg);
+    flex-grow: 2;
+
+    & > *:nth-child(2) {
+      margin-left: auto;
+    }
+  }
+
+  &__field {
+    label {
+      font-size: small;
+      font-weight: bold;
+    }
+  }
+}

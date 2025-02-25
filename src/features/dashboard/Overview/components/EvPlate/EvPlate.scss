@@ -1,0 +1,24 @@
+.ev-plate {
+  margin-bottom: var(--spacer-lg);
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__units {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: var(--spacer-sm);
+    @media (max-width: 1200px) {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      @media (max-width: 986px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      @media (max-width: 560px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+  }
+}

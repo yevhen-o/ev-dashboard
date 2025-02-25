@@ -1,0 +1,40 @@
+.button {
+  border: none;
+  outline: none;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+
+  padding: var(--spacer-sm) var(--spacer-df);
+  font-size: 1rem;
+  border-radius: var(--border-radius-lg);
+  font-weight: 700;
+  color: var(--color-gray-0);
+  background: linear-gradient(110.46deg, #9ba1a6 12.27%, #68696b 93.92%);
+
+  &:hover {
+    background: linear-gradient(110.46deg, #6f7172 12.27%, #454546 93.92%);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  &--rounded {
+    border-radius: 50%;
+    padding: var(--spacer-sm);
+  }
+
+  &--transparent {
+    background: transparent;
+  }
+
+  &--primary {
+    background: linear-gradient(110.46deg, #70C3FF 12.27%, #4B65FF 93.92%);
+
+    &:hover {
+      background: linear-gradient(110.46deg, #64baf7 12.27%, #3d58f4 93.92%);
+    }
+  }
+}

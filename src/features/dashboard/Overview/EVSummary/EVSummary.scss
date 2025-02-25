@@ -1,0 +1,22 @@
+.summary {
+  &__wrapper {
+    margin-bottom: var(--spacer-sm);
+  }
+  &__telemetry {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: var(--spacer-xs);
+  }
+  &__layout {
+    margin: 0 calc(var(--spacer-sm) * -1)
+  }
+}
