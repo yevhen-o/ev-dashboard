@@ -1,9 +1,11 @@
+export const base = "/ev-dashboard";
+
 export enum IDENTIFIERS {
-  HOME = "/",
-  NOTIFICATIONS = "/notifications",
-  EV_VIEW = "/dashboard/[evId]",
-  PAGE_401 = "/401",
-  PAGE_404 = "/404",
+  HOME = base + "/",
+  NOTIFICATIONS = base + "/notifications",
+  EV_VIEW = base + "/dashboard/[evId]",
+  PAGE_401 = base + "/401",
+  PAGE_404 = base + "/404",
 }
 
 type Primitive =

@@ -2,6 +2,7 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 import Backend from "i18next-http-backend";
+import { base } from "./services/urlsHelper/urlsHelper";
 
 i18n
   .use(Backend)
@@ -16,7 +17,7 @@ i18n
       caches: ["localStorage"],
     },
     backend: {
-      loadPath: "/locales/{{lng}}/translations.json",
+      loadPath: base + "/locales/{{lng}}/translations.json",
     },
     interpolation: { escapeValue: false },
   });
