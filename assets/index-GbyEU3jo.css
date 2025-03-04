@@ -1,0 +1,1 @@
+.notification{padding:var(--spacer-xs) var(--spacer-df);border:var(--border-style);border-radius:var(--border-radius-df);display:block}.notification+.notification{margin-top:var(--spacer-sm)}.notification--critical{border-color:var(--color-warning)}
