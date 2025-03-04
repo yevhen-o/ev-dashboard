@@ -1,5 +1,9 @@
 # EV Dashboard
 
+## Home page
+
+"https://yevhen-o.github.io/ev-dashboard"
+
 ## Project Overview
 
 EV Dashboard is a React-based project designed to visualize and manage electric vehicle data. It utilizes technologies such as Vite, Redux, React Router, Leaflet, and Playwright for development, state management, routing, mapping, and end-to-end testing.
@@ -110,7 +114,7 @@ npx husky install
 ├── src/                 # Source code
 │   ├── components/      # UI components
 │   ├── features/        # Feature modules
-│   ├── shared/          # Shared utilities and hooks
+│   ├── hooks/           # Shared hooks
 │   └── store/           # Redux store
 ├── public/              # Static assets
 ├── .husky/              # Git hooks
