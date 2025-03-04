@@ -1,6 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
 import {
   layoutReducer,
+  setLanguage,
   setOffline,
   setOnline,
 } from "src/features/layout/layoutSlice";
@@ -11,6 +12,7 @@ import {
   removeToast,
   toastsReducer,
 } from "src/features/toasts/toastsSlice";
+import i18n from "src/i18n";
 
 export const store = configureStore({
   reducer: {
@@ -39,6 +41,10 @@ window.addEventListener("offline", () => {
       isWarning: true,
     })
   );
+});
+
+i18n.on("languageChanged", (lng) => {
+  store.dispatch(setLanguage(lng));
 });
 
 export type RootState = ReturnType<typeof store.getState>;

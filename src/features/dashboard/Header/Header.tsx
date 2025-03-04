@@ -19,6 +19,11 @@ export function Header() {
   const { t, i18n } = useAppTranslation();
   const theme = useTypedSelector((store) => store.layout.theme);
   const hasNewNotifications = useSelector(hasUnseenNotifications);
+
+  const handleChangeLanguage = () => {
+    i18n.changeLanguage(i18n.language === "en" ? "de" : "en");
+  };
+
   return (
     <div className="header__wrapper">
       <div className="header__content">
@@ -34,11 +39,19 @@ export function Header() {
             {hasNewNotifications && (
               <span className="header__notification-bullet"></span>
             )}
-            <Button className="header__theme-toggle" isRounded isTransparent>
+            <Button
+              title={t("headerDashboardNotification")}
+              className="header__theme-toggle"
+              isRounded
+              isTransparent
+            >
               <InformationSquare size={20} />
             </Button>
           </Link>
           <Button
+            title={t("headerChangeThemeTitle", {
+              theme: theme === "light" ? "dark" : "light",
+            })}
             onClick={() => toggleTheme()}
             className="header__theme-toggle"
             isRounded
@@ -53,12 +66,10 @@ export function Header() {
           <Button
             isRounded
             isTransparent
-            onClick={() =>
-              i18n.changeLanguage(i18n.language === "en" ? "de" : "en")
-            }
+            onClick={handleChangeLanguage}
             title={t("headerChangeLanguageTitle")}
           >
-            {i18n.language === "en" ? "de" : "en"}
+            {i18n.language === "en" ? "DE" : "EN"}
           </Button>
         </div>
       </div>

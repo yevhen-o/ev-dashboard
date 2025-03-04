@@ -10,6 +10,7 @@ const hiddenFieldsKey = storageGetKey("plateHiddenFields");
 
 interface LayoutSliceI {
   theme: "dark" | "light";
+  language: string | null;
   isOnline: boolean;
   hiddenFields: (keyof TelemetryData)[];
 }
@@ -22,6 +23,7 @@ const initialState: LayoutSliceI = {
       : window?.matchMedia?.("(prefers-color-scheme: light)")?.matches
       ? "light"
       : "dark",
+  language: null,
   isOnline: navigator.onLine,
   hiddenFields: storageGet(hiddenFieldsKey, []),
 };
@@ -30,6 +32,9 @@ const layoutSlice = createSlice({
   name: "layout",
   initialState,
   reducers: {
+    setLanguage(state, action: PayloadAction<LayoutSliceI["language"]>) {
+      state.language = action.payload;
+    },
     toggleTheme(state) {
       const nextTheme = state.theme === "dark" ? "light" : "dark";
       state.theme = nextTheme;
@@ -57,6 +62,7 @@ const layoutSlice = createSlice({
 });
 
 export const {
+  setLanguage,
   toggleTheme,
   setOnline,
   setOffline,

@@ -52,13 +52,13 @@ export const batteryHealthSegments = () => [
 
 export const speedSegments = () => [
   {
-    range: { min: 20, max: 22 },
+    range: { min: 15, max: 20 },
     isWarning: true,
     color: "orange",
     message: i18n.t("validationMessageSpeedHigh"),
   },
   {
-    range: { min: 23, max: 25 },
+    range: { min: 21, max: 25 },
     isCritical: true,
     color: "red",
     message: i18n.t("validationMessageSpeedCritical"),

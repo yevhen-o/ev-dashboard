@@ -24,7 +24,7 @@ const TableBody = <O extends Record<string, unknown>>({
     <tbody>
       {data.map((record, index) => (
         <tr
-          key={`${record?.id || nanoid()}__${index}`}
+          key={`${record?.win || nanoid()}__${index}`}
           className={classNames(
             "row",
             `${name}__row`,

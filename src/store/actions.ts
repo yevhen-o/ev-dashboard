@@ -1,4 +1,5 @@
 export {
+  setLanguage,
   toggleTheme,
   setOnline,
   setOffline,

@@ -36,6 +36,7 @@ export function EVList() {
   const { t } = useAppTranslation();
 
   const hiddenFields = useTypedSelector((state) => state.layout.hiddenFields);
+  const appLanguage = useTypedSelector((state) => state.layout.language);
   const [view, setView] = useState<"grid" | "table">(
     storageGet(layoutViewKey, "grid")
   );
@@ -68,11 +69,8 @@ export function EVList() {
   ];
   const data = useSelector(selectItemsAsArray);
 
-  const initialized = i18n.isInitialized;
-  const language = i18n.language;
-
   const filterFields = useMemo(() => {
-    if (!initialized || !language) return [];
+    if (!appLanguage) return [];
 
     return [
       { name: "search", label: i18n.t("filterLabelSearch") },
@@ -105,7 +103,7 @@ export function EVList() {
         ],
       },
     ];
-  }, [initialized, language]);
+  }, [appLanguage]);
 
   const { values } = useSearchParamsAsValues();
   const appliedIsSortedAsc = values.sortOrder === "desc" ? false : true;
@@ -130,10 +128,22 @@ export function EVList() {
     <>
       <div className="ev-list__filters">
         {filters}
-        <Button isRounded isTransparent onClick={toggleView}>
+        <Button
+          title={
+            view !== "table" ? t("commonTitleTable") : t("commonTitleGrid")
+          }
+          isRounded
+          isTransparent
+          onClick={toggleView}
+        >
           {view === "table" ? <Grid size={20} /> : <TableIcon size={20} />}
         </Button>
-        <DropDown isRounded isTransparent options={options}>
+        <DropDown
+          title={t("commonTitleSettings")}
+          isRounded
+          isTransparent
+          options={options}
+        >
           <Settings size={20} />
         </DropDown>
       </div>

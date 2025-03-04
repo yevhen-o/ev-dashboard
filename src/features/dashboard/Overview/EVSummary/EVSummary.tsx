@@ -215,10 +215,26 @@ export function EVSummary() {
       <div className="summary__title">
         <h2>{t("summaryStatisticsForAllVehicles")}</h2>
         <div className="summary__actions">
-          <DropDown isRounded isTransparent options={options}>
-            <Settings size={20} />
-          </DropDown>
-          <Button onClick={handleToggleHidden} isRounded isTransparent>
+          {!isContentHidden && (
+            <DropDown
+              title={t("commonTitleSettings")}
+              isRounded
+              isTransparent
+              options={options}
+            >
+              <Settings size={20} />
+            </DropDown>
+          )}
+          <Button
+            title={
+              isContentHidden
+                ? t("commonTitleExpand")
+                : t("commonTitleCollapse")
+            }
+            onClick={handleToggleHidden}
+            isRounded
+            isTransparent
+          >
             {isContentHidden ? (
               <ChevronDown size={20} />
             ) : (
