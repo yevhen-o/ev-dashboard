@@ -3,6 +3,7 @@ import { Header } from "../Header/Header";
 import "./DashboardLayout.scss";
 import classNames from "classnames";
 import { useTypedSelector } from "src/hooks";
+import { Footer } from "../Footer";
 
 export function DashboardLayout() {
   const isOnline = useTypedSelector((state) => state.layout.isOnline);
@@ -18,6 +19,7 @@ export function DashboardLayout() {
           <Outlet />
         </div>
       </main>
+      <Footer />
     </div>
   );
 }

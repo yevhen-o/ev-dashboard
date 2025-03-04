@@ -5,6 +5,7 @@
 }
 .dashboard-content-area {
   position: relative;
-  padding: 0 var(--spacer-lg);
+  padding: var(--spacer-lg);
   padding-top: var(--header-height);
+  min-height: calc(100vh - var(--header-height) - var(--footer-height));
 }

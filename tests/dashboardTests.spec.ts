@@ -17,7 +17,7 @@ test.describe("test dashboard page", () => {
     });
   });
   test("has 10 EV with masked values", async ({ page }) => {
-    await expect(page.locator(".ev-plate__title")).toHaveCount(10);
+    await expect(page.locator(".ev-plate__title")).toHaveCount(30);
     await expect(page).toHaveScreenshot("DashboardFullWithEV.png", {
       mask: [page.locator(".react-grid-layout, .ev-plate")],
     });

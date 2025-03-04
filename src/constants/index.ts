@@ -1,6 +1,6 @@
 export const FILTER_ALL_VALUE = "_all";
 
-export const EV_LIST_ITEMS_COUNT = 10;
+export const EV_LIST_ITEMS_COUNT = 30;
 
 export const EV_LIST_MIN_ITEMS_TO_UPDATE = 1;
 

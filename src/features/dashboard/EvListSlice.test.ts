@@ -29,8 +29,8 @@ describe("evListSlice", () => {
 
   it("should initialize state with 10 items", () => {
     const state = store.getState().evList as ReturnType<typeof evListReducer>;
-    expect(state.list.length).toBe(10);
-    expect(Object.keys(state.itemsById).length).toBe(10);
+    expect(state.list.length).toBe(30);
+    expect(Object.keys(state.itemsById).length).toBe(30);
   });
 
   it("should update telemetry items", () => {
