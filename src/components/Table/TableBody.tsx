@@ -19,7 +19,6 @@ const TableBody = <O extends Record<string, unknown>>({
   renderFunctions = {},
   configuredFields,
 }: PropsWithChildren<TableBodyProps<O>>): ReactElement => {
-  console.log(renderFunctions);
   return (
     <tbody>
       {data.map((record, index) => (

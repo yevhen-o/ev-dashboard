@@ -5,7 +5,7 @@ import { vi } from "vitest";
 // Mock translation function
 const t = vi.fn((key) => key);
 
-vi.mock("src/shared/hooks", () => ({
+vi.mock("src/hooks", () => ({
   useAppTranslation: () => ({ t }),
   useTypedSelector: vi.fn((selector) =>
     selector({

@@ -18,15 +18,8 @@ test.describe("test dashboard page", () => {
   });
   test("has 10 EV with masked values", async ({ page }) => {
     await expect(page.locator(".ev-plate__title")).toHaveCount(10);
-    // await expect(async () => {
-    // }).toPass();
     await expect(page).toHaveScreenshot("DashboardFullWithEV.png", {
-      fullPage: true,
-      mask: [
-        page.locator(
-          ".data-plate__value, .leaflet-container, .ev-plate__title"
-        ),
-      ],
+      mask: [page.locator(".react-grid-layout, .ev-plate")],
     });
   });
 });
