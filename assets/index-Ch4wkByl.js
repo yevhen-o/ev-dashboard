@@ -1,1 +1,0 @@
-import{c as r,n as a,j as i}from"./index-ItxzIt1A.js";function l(){const e=r.c(4),{t:n}=a();let t;e[0]!==n?(t=n("evPageSingleEV"),e[0]=n,e[1]=t):t=e[1];let s;return e[2]!==t?(s=i.jsx(i.Fragment,{children:t}),e[2]=t,e[3]=s):s=e[3],s}export{l as default};
