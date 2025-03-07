@@ -41,7 +41,7 @@ export function Header() {
             )}
             <Button
               title={t("headerDashboardNotification")}
-              className="header__theme-toggle"
+              className="header__notification-button"
               isRounded
               isTransparent
             >

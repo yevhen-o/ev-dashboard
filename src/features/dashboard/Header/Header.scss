@@ -25,6 +25,9 @@
     align-items: center;
     gap: var(--spacer-xs);
     color: var(--dark-text-color);
+    &:hover {
+      color: var(--dark-text-color);
+    }
   }
 
   &__actions {
@@ -45,6 +48,12 @@
       height: var(--spacer-sm);
       border-radius: 50%;
       background-color: var(--color-attention);
+    }
+
+    &-button {
+      &:hover {
+        color: var(--dark-text-color);
+      }
     }
   }
   
